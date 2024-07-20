@@ -1,0 +1,28 @@
+def avg(*num):
+    sum=0
+    for i in num:
+        sum=sum+i
+    return sum/len(num)
+
+maths=int(input("enter the marks of maths:"))
+english=int(input("enter the marks of english:"))
+science=int(input("enter the marks of science:"))
+history=int(input("enter the marks of history:"))
+geography=int(input("enter the marks of geography:"))
+marks=avg(maths+english+science+history+geography)
+print("average of total marks of a student is:",marks)
+GPA=marks/10
+print("the GPA of total markks of the student is:",GPA)
+
+if(marks>=90):
+    print("the student got O grade")
+elif(marks>=80 ,'&', marks<90):
+    print("the student got A grade")
+elif(marks>=70 ,'&', marks<80):
+    print("the student got B grade")
+elif(marks>=50 ,'&', marks<60):
+    print("the student got C grade")
+else:
+    print("the student got failed")
+            
+    
